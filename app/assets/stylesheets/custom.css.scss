@@ -1,0 +1,95 @@
+@import "bootstrap";
+
+.hero-unit {
+  padding: 240px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 30px;
+  background-image:url('backs.jpg');
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+box-sizing: border-box;
+border-radius: 0;
+-moz-border-radius: 0;
+}
+
+
+.btn {
+  margin-top:20px;
+  border-radius: 0;
+}
+
+h1 {
+  margin-top:-20px;
+font-size: 3em;
+letter-spacing: -2px;
+color:#eeeeee;
+}
+
+
+h3 {
+  margin-top:10px;
+font-family:"Bookman Old Style";  
+letter-spacing: 1px;
+color:#e5e3e3;
+font-size:25px;
+}
+
+
+a{
+  margin-left:10px;
+}
+
+header .navbar-inner{
+height:50px;
+}
+
+header ul{
+float:right;
+list-style:none;
+margin-top:12px;
+}
+
+header li{
+float:left;
+margin-left:10px;
+margin-top:10px;
+}
+
+header ul.nav-pull-right a{
+  text-decoration:none;
+}
+
+ul.nav-pull-right a:hover{
+color:#fff;  
+}
+
+#logo {
+float: left;
+margin-left:30px;
+font-size: 1.7em;
+color:#46A546;
+text-transform: uppercase;
+letter-spacing: -1px;
+padding-top: 19px;
+font-weight: bold;
+line-height: 1;
+}
+
+#logo:hover{
+  color:#ffffff;
+  text-decoration:none;
+}
+
+.form-horizontal{
+  float:right;
+  background-color:#eeeeee;
+  overflow:hidden;
+  margin-top:-240px;
+  margin-right:-50px;
+}
+
+
+
+
