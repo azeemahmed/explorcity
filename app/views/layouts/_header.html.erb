@@ -1,0 +1,53 @@
+<header class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+			<%= link_to 'Explor City', root_path, id: "logo" %>
+			<nav>
+				<ul class="nav pull-right">
+					<% if signed_in? %>
+					<li class="usern">Welcome <%= current_user.name %>!</li>
+					<li id="fat-menu" class="dropdown">
+					<a href="" class="dropdown-toggle" data-toggle="dropdown">
+					<%= gravatar_for(current_user) %> <b class="caret"></b>
+					</a>
+					<ul class="dropdown-menu">
+					<li><%= link_to "Profile", current_user %></li>
+					<li><%= link_to "Settings", '#' %></li>
+					<li class="divider"></li>
+					<li>
+					<%= link_to "Sign out", signout_path, method: "delete" %>
+					</li>
+					</ul>
+					</li>
+					
+					<% else %>
+					
+					<%= form_for(:session, url: sessions_path, :html => { :class => "myforms" }) do |f| %>
+		
+		<li><%= f.text_field :email, class: "input-xlarge", :placeholder=> 'Email', class: "field" %></li>
+		
+		<li><%= f.password_field :password, class: "input-xlarge", :placeholder=> 'Password', class: "field" %></li>
+		
+		<li><%= f.submit "Sign In", class: "btn btn-success" %></li>
+		<%end%>		
+		
+		<% flash.each do |key, value| %>
+	<li><div class="alert alert-<%= key %>"><%= value %></div></li>
+<% end %>
+					
+				</ul>
+				
+			</nav>
+		</div>
+	</div>
+	<li class="fpass"> <%= link_to "Forgot Password?", contact_path %> </li>
+	
+	<% end %>
+	
+
+	
+	<script>
+		$('.dropdown-toggle').dropdown()
+	</script>
+	
+</header>

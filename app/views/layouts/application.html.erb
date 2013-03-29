@@ -1,47 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Explorcity</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
+    <title>Explorcity</title>
+  <%= stylesheet_link_tag   "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+  <%= render 'layouts/shim' %>
 </head>
 <body>
-
-<header class="navbar navbar-fixed-top">
-	<div class="navbar-inner">
-		<div class="container">
-			<%= link_to 'Explor City', '#', id: "logo" %>
-			<nav>
-				<ul class="nav pull-right">
-					<%= form_for(@user, :html => { :class => "myforms" }) do |f| %>
+	
+	<%= render 'layouts/header' %>
 		
-		<li><%= f.text_field :email, class: "input-xlarge", :placeholder=> 'Email', class: "field" %></li>
-		
-		<li><%= f.password_field :password, class: "input-xlarge", :placeholder=> 'Password', class: "field" %></li>
-		
-		<li><%= f.submit "Sign In", class: "btn btn-success" %></li>
-		<%end%>					
-				</ul>
-			</nav>
-		</div>
-	</div>
-</header>
-
-<%= yield %>
-
-<footer class="footer">
-<small>
-<b><a href="http://azeemahmed.me">&copy;Explor City</a> </b>
-</small>
-<nav>
-<ul>
-<li><%= link_to "About Us", '#' %></li>
-<li><%= link_to "Contact Us", '#' %></li>
-<li><a href="http://news.ycombinator.com/">News</a></li>
-</ul>
-</nav>
-</footer>
+	<%= yield %>
 
 </body>
+	<%= render 'layouts/footer' %>
 </html>
+
+
+
+
+

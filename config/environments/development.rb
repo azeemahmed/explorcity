@@ -34,4 +34,7 @@ Explorcity::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+  
+  OpenSSL::SSL::VERIFY_PEER = OpenSSL::SSL::VERIFY_NONE
+  
 end
