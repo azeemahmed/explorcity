@@ -1,0 +1,51 @@
+<div class="cpage1">
+	<div class="forms">
+    <form method="get" action="/" class="searchform" >
+      <input name="q" class="spann" type="text"  placeholder="Eg: New Zealand, Ontario, Seychelles" >
+      <button type="submit" class="btn btn-primary"> <i class="icon-search icon-white"></i></button>
+    </form>
+	</div>
+	
+	<h3 class="travelhead">Where do you plan to travel today?</h3>
+
+	
+	<div class="images">
+		<%= image_tag("asia.jpg", alt: "Asia", :class => "first") %>
+		<%= image_tag("europe.jpg", alt: "Asia", :class => "first") %>
+		<%= image_tag("africa.jpg", alt: "Asia", :class => "first") %>		
+	</div>
+	<h4 class="asia">Asia</h4>
+	<h4 class="europe">Europe</h4>
+	<h4 class="africa">Africa</h4>
+
+	<div class="images2">
+		<%= image_tag("centralamerica.jpg", alt: "Asia", :class => "first") %>
+		<%= image_tag("northamerica.jpg", alt: "Asia", :class => "first") %>
+		<%= image_tag("oceania.jpg", alt: "Asia", :class => "first") %>		
+	</div>
+	
+	<h4 class="camerica">Central America</h4>
+	<h4 class="namerica">North America</h4>
+	<h4 class="oceania">Oceania</h4>
+	
+	<div class="images3">
+		<%= image_tag("middleeast.jpg", alt: "Asia", :class => "first") %>
+		<%= image_tag("southamerica.jpg", alt: "Asia", :class => "first") %>
+		<%= image_tag("pacific.jpg", alt: "Asia", :class => "first") %>		
+	</div>
+	
+	<h4 class="meast">Middle East</h4>
+	<h4 class="samerica">South America</h4>
+	<h4 class="pacific">Pacific</h4>
+	
+	<div class="intropara">
+		<h4 class="smallhead">What is Explor City?</h4>
+			<p class="para">Explor City helps you find cities and countries you want to travel. Planning to go for a holiday? Explor city helps 
+				you get advanced info on the place you want to visit. Explor City also helps you explore the best hang out, budget hotels, 
+				attractions and more. Explo City is built by people who love travelling and are always in the mood to bring the next big 
+				adventure to your table.<br /><br />
+				<%= link_to "Learn More", learn_path %>
+			</p>
+	</div>
+	
+</div>

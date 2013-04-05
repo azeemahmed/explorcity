@@ -2,12 +2,15 @@
   <h1>Explor City</h1>
   <h3>The fun way to explore your city.</h3>
   <p>
-    <%= link_to "Learn More", learn_path, class: "btn btn-primary btn-large" %>
+  	<% if signed_in? %>
+    <%= link_to "Start Exploring", welcome_path, class: "btn btn-primary btn-large" %>
+	<% else %>
+	<%= link_to "Learn More", learn_path, class: "btn btn-primary btn-large" %>
 	<%= link_to "Sign Up", signup_path, class: "btn btn-primary btn-large" %>
-
+	<% end %>
   </p>
   
-  
+
 
 		
 

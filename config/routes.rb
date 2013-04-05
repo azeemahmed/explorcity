@@ -18,6 +18,8 @@ Explorcity::Application.routes.draw do
   match '/signin', to: 'static_pages#home'
   
   match '/signout', to: 'sessions#destroy', via: :delete
+  
+  match '/welcome', to: 'sessions#welcome'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
